@@ -1,4 +1,4 @@
-#import mpv doesn't work for some damn reason. Error is apparently that I'm using 64bit python with 32bit mpv but my python is 32bit
+#import mpv doesn't work for some reason. I'll have to use another method to get mpv to play
 from __future__ import unicode_literals
 import os
 import youtube_dl
