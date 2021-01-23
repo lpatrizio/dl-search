@@ -1,2 +1,2 @@
 # dl-search
-Searching for and playing Youtube videos without going on the site
+Searching for and playing Youtube videos through the command line interface
