@@ -1,5 +1,5 @@
 # dl-search
-Searching for and playing Youtube videos through the command line interface. Because I hated the new UI enough that I decided I wanted do see if I could do away with it entirely. Turns out you can.
+Searching for and playing Youtube videos through the command line interface. Because I hated the new UI enough that I decided I wanted to see if I could do away with it entirely. Turns out you can.
 Created through a combination of Youtube-dl for extracting videos, and mpv for playing them.
 
 ###  Searching for Videos
