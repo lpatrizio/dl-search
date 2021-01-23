@@ -1,4 +1,4 @@
-#import mpv doesn't work for some reason. I'll have to use another method to get mpv to play
+#import mpv doesn't work for some reason. Gotta use a different method to make that work.
 from __future__ import unicode_literals
 import os
 import youtube_dl
@@ -89,11 +89,12 @@ def optionSelect(results):  #Basic method for displaying all extracted results a
         return
     for i in range (len(results)):
             print("Result "+str(i)+": ", results[i][0], "||", results[i][1])
-    requested = input("Choose an option: " )
-    if (requested == 'exit'):
-        return
+    while(True):
+        requested = input("Choose an option: " )
+        if (requested == 'exit'):
+            return
     #very spaghetti way to get mpv working
-    os.system('mpv.exe '+results[int(requested)][2])
+        os.system('mpv.exe '+results[int(requested)][2])
 
 def searchCleaner(extracted): #utility for cleaning up stuff found with ytextractor
     foundResults = []
@@ -112,7 +113,7 @@ def searchCleaner(extracted): #utility for cleaning up stuff found with ytextrac
 
 #Ask the user what they're searching for
 search = ''
-while (search!= 'exit'):
+while(True):
     search = input("What are you looking for? ")
     if (search == 'exit'):
         exit(0)
